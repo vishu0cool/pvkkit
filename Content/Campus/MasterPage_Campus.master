@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterPage_Campus.master.cs" Inherits="Contents_College_MasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ContentPlaceHolder id="cphkeywords" runat="server">
+
+		</asp:ContentPlaceHolder>
+		<!-- Page Heading Section Start -->	
+	<div class="pagehding-sec">
+			<%--<div class="images-overlay"></div>	--%>	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-heading">
+						<h1>Campus @ PVKKIT</h1>
+					</div>
+					<div class="breadcrumb-list">
+						<ul>
+							<li><a href="/Default.aspx">Home</a></li>
+							<li><a href="#">Campus</a></li>
+						</ul>
+					</div>					
+				</div>				
+			</div>
+		</div>
+	</div>
+	<!-- Page Heading Section End -->	
+			<div class="about-desc pt-100 pb-70"">
+		<div class="container">
+	<div class="row">	
+	<div class="col-md-4">
+					<div class="sidebar">
+					
+						<div class="widget-archive">
+							<h1>Campus</h1>
+							<ul>
+                                             <li><a href="/Content/Campus/AntiRaggingZone.aspx">Anti Ragging Zone</a></li>	
+                                              <li><a href="/Content/Campus/Amenities.aspx">Amenities</a></li>	
+											 <li><a href="/Content/Campus/SmartCampus.aspx">Smart Campus</a></li>	
+											 <li><a href="/Content/Campus/ELibrary.aspx">E- Library</a></li>	
+											 <li><a href="/Content/Campus/Sports.aspx">Sports</a></li>	
+											 <li><a href="/Content/Campus/Gallery.aspx">Gallery</a></li>	
+											 <li><a href="/Content/Campus/CampusLife.aspx">Campus Life</a></li>
+											 <li><a href="/Content/Campus/Empowerment.aspx">Empowerment</a></li>
+                                             <li><a href="/Content/Campus/Downloads.aspx">Downloads</a></li>
+							</ul>
+						</div>						
+					</div>
+				</div>
+		<div class="col-md-8">
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+		</div>
+		</div>
+			</div>
+				</div>
+</asp:Content>
+

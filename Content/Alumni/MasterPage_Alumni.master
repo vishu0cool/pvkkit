@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterPage_Alumni.master.cs" Inherits="Contents_College_MasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <asp:ContentPlaceHolder id="cphkeywords" runat="server">
+
+		</asp:ContentPlaceHolder>
+		<!-- Page Heading Section Start -->	
+	<div class="pagehding-sec">
+			<%--<div class="images-overlay"></div>	--%>	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-heading">
+						<h1>Alumni</h1>
+					</div>
+					<div class="breadcrumb-list">
+						<ul>
+							<li><a href="/Default.aspx">Home</a></li>
+							<li><a href="#">Alumni</a></li>
+						</ul>
+					</div>					
+				</div>				
+			</div>
+		</div>
+	</div>
+	<!-- Page Heading Section End -->	
+			<div class="about-desc pt-100 pb-70"">
+		<div class="container">
+	<div class="row">	
+	<div class="col-md-4">
+					<div class="sidebar">
+					
+						<div class="widget-archive">
+							<h1>Alumni</h1>
+							<ul>
+											<li><a href="/Content/Alumni/Directory.aspx">Directory</a></li>	
+											 <li><a href="/Content/Alumni/Enrollnow.aspx">Enroll now</a></li>	
+											<li><a href="/Content/Alumni/Events.aspx">Events & Gallery</a></li>
+											 <li><a href="/Content/Alumni/Testimonials.aspx">Testimonials</a></li>
+							</ul>
+						</div>						
+					</div>
+				</div>
+		<div class="col-md-8">
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+		</div>
+		</div>
+            <br />
+			<div class="row">	
+
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+		</div>
+			</div>
+		</div>
+</asp:Content>
+

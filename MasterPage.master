@@ -1,0 +1,516 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head runat="server">
+	
+	<!-- Meta Tags -->	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="utf-8"/>
+	
+ <asp:ContentPlaceHolder id="cphkeywords" runat="server">
+
+		</asp:ContentPlaceHolder>
+	
+	<meta name="author" content="SBES"/>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141892248-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-141892248-1');
+</script>
+
+	<!-- Title -->
+	<title>PVKK Institute of Technology</title>		
+	<!-- Favicon Icon -->
+	<link rel="icon" type="image/png" href="img/favicon.png"/>	
+	<!-- Apple Touch Icons -->
+	
+	<!-- Stylesheets Start -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"/> 
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="/css/magnific-popup.css"/>
+	<link rel="stylesheet" href="/css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="/css/animate.css"/>
+	<link rel="stylesheet" href="/css/main.css"/>
+	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="stylesheet" href="/css/meanmenu.min.css"/>
+	<link rel="stylesheet" href="/css/responsive.css"/>	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <style type="text/css">
+  
+  .sticky-container{
+    /*background-color: #333;*/
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -119px;
+    top:130px;
+    width: 150px;
+    z-index: 9999;
+  }
+
+  .sticky li{
+    list-style-type: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor: pointer;
+    filter: white(100%); 
+              /*  filter: ; */
+    -webkit-filter: white(100%); 
+
+  }
+
+  .sticky li:hover{
+    margin-left: -115px;
+  
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  }
+
+  .sticky li img{
+    float: left;
+    margin: 5px 5px;
+    margin-right: 10px;
+
+  }
+
+  .sticky li p{
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    line-height: 43px;
+
+  }
+
+  /** content **/
+  .content{
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 700px;
+  }
+  /*h1, h2{
+    font-family: "Source Sans Pro",sans-serif;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+  }
+
+  h1{
+    font-weight: 900;
+    font-size: 64px;
+  }
+*/
+ /* h2{
+    font-size:26px;
+  }
+*/
+  /*p{
+    color: #000000;
+    font-family: "Lato";
+    line-height: 28px;
+    font-size: 15px;
+    padding-top: 50px;
+  }
+*/
+ /* p.credit{
+    padding-top: 20px;
+    font-size: 12px;
+  }*/
+
+ /* p a{
+    color: #800000;
+  }*/
+
+  /** fork icon**/
+  .fork{
+    position: absolute;
+    top:0px;
+    left: 0px;
+  }
+  </style>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
+</head>
+	<body class="home-v1">
+	<!-- Preloader Start -->
+	<div id="preloader">
+		<div id="preloader-status"></div>
+	</div>
+	<!-- Preloader End -->
+	<!-- Header Start -->
+	<header>
+		<div class="hd-sec">
+		<!-- Header Topbar Start -->
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-sm-8">
+						<div class="header-left">
+							<ul>
+								<li><i class="fa fa-phone"></i>+91 9550616861</li>							
+								<li><i class="fa fa-envelope-o"></i>principal.3n@jntua.ac.in</li>
+							</ul>	
+						</div>
+					</div>				
+					<div class="col-md-5 col-sm-4">
+						<div class="header-right-div">
+							<div class="soical-profile">
+								<ul>
+                                    <li><a href="/links.aspx"><i class="fa fa-link"></i>Links</a></li>
+									<li><a href="http://campusconnect.sbesatp.org" target="_blank" rel="nofollow"><i class="fa fa-lock"></i>CampusConnect Login</a></li>
+									<li><a href="https://www.facebook.com/PvkkInstituteOfTechnology/" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://twitter.com/pvkkit" target="_blank" rel="nofollow"><i class="fa fa-twitter" ></i></a></li>
+									<li><a href="https://in.linkedin.com/in/pvkkit" target="_blank" rel="nofollow"><i class="fa fa-linkedin" ></i></a></li>
+									<li><a href="https://www.youtube.com/user/pvkkit" target="_blank" rel="nofollow"><i class="fa fa-youtube" ></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Topbar End -->
+		<!-- Main Bar Start -->
+		<div class="hd-sec">
+			<div class="container">
+				<div class="row">
+					<!-- Logo Start -->
+					<div class="col-md-3 col-sm-12 col-xs-8">
+						<div class="logo">
+							<a href="/Default.aspx"><img src="/img/pvkkit_logo.gif" alt="pvkkit logo"/></a>
+						</div>
+					</div>	
+					<!-- Logo End -->
+					<!-- Main Menu Start -->
+					<div class="mobile-nav-menu"></div>						
+					<div class="col-md-9 col-sm-9 menu-center">
+						<div class="menu">
+							<nav id="main-menu" class="main-menu">
+								<ul>
+									<li class="active"><a href="/Default.aspx">Home</a>	</li> 									
+									<li><a href="#">About</a>
+										<ul>
+											<li><a href="/Content/About/About_Management.aspx">Management</a></li>	
+											 <li><a href="/Content/About/About_Principal.aspx">Principal</a></li>	
+											 <li><a href="/Content/About/About_Pvkkit.aspx">College</a></li>	
+											 <li><a href="/Content/About/About_Sbes.aspx">Sri Balaji Educational Society</a></li>	
+											 <li><a href="/Content/About/About_BalajiSevasamithi.aspx"> Balaji Sevasamithi</a></li>
+											 <li><a href="/Content/About/About_Insurance.aspx">Balaji Insurance</a></li>
+											 <li><a href="/gallery.aspx">Gallery</a></li>
+							</ul>   
+									</li> 	  											
+									<li><a href="#">Academics</a>
+														<ul>
+															<li><a href="/Content/Admissions/AdmissionProcedure.aspx">Admission Procedure</a></li>
+															<li><a href="/Content/Admissions/Scholarship.aspx">Scholarship / Merit & Aid</a></li>
+															<li><a href="#">Academic Calender</a></li>
+															<li><a href="#">Application Forms </a></li>
+														</ul>  							
+									</li>								
+									<li class="active"><a href="/Content/Courses/Courses.aspx">Courses</a>
+												<ul>
+													<li><a href="#">Under Graduation</a>
+														<ul>
+															<li ><a href="/Content/Courses/BTech_CIVIL.aspx">B.Tech-CIVIL</a></li>
+															<li><a href="/Content/Courses/BTech_EEE.aspx">B.Tech-EEE</a></li>
+															<li><a href="/Content/Courses/BTech_Mech.aspx">B.Tech-MECHANICAL</a></li>
+															<li><a href="/Content/Courses/BTech_ECE.aspx">B.Tech-ECE</a></li>
+															<li><a href="/Content/Courses/BTech_CSE.aspx">B.Tech-CSE</a></li>
+															
+														</ul>								
+													</li>          										
+													<li><a href="#">PG Graduation</a>
+														<ul>
+																<li><a href="/Content/Courses/MTech_CSE.aspx">M.Tech-CSE</a></li>
+															<li><a href="/Content/Courses/MTech_ECE.aspx">M.Tech-DECS</a></li>
+															<li><a href="/Content/Courses/MTech_EEE.aspx">M.Tech-EPS</a></li>
+															<li><a href="/Content/Courses/MTech_CIVIL.aspx">M.Tech-STE</a></li>
+															<li><a href="/Content/Courses/MTech_MECH.aspx">M.Tech-CAD/CAM</a></li>
+															<li><a href="/Content/Courses/Mba.aspx">Master of Business Administration</a></li>
+														</ul>
+													</li>	
+													<li><a href="#">Diploma</a>
+														<ul>
+															<li><a href="/Content/Courses/Diploma_Civil.aspx">CIVIL</a></li>
+															<li><a href="/Content/Courses/Diploma_ECE.aspx">ECE</a></li>
+															<li><a href="/Content/Courses/Diploma_Mech.aspx">MECHANICAL</a></li>
+															<li><a href="/Content/Courses/Diploma_EEE.aspx">EEE</a></li>
+														</ul>
+													</li>									
+												</ul>											
+											</li>										
+									<li><a href="#">Placement Cell</a><ul>
+								<li><a href="/Content/PlacementCell/TrainingandPlacement.aspx">About Cell</a></li>	
+								<li><a href="/Content/PlacementCell/Placements-2019.aspx">Placements 2019</a></li>	
+										 <li><a href="/Content/PlacementCell/Guidelines.aspx">Guidelines</a></li>	
+								<li><a href="/Content/PlacementCell/Gallery.aspx">Gallery</a></li>	
+							</ul></li>
+									<li><a href="/Content/RandDCell/RandD.aspx">R&D</a></li>										
+									<li><a href="#">Campus</a>
+										<ul>
+											   <li><a href="/Content/Campus/AntiRaggingZone.aspx">Anti Ragging Zone</a></li>
+											   <li><a href="/Content/Campus/Amenities.aspx">Amenities</a></li>	
+											<li><a href="/Content/Campus/SmartCampus.aspx">Smart Campus</a></li>	
+											 <li><a href="/Content/Library/Default.aspx">Library</a></li>	
+											 <li><a href="/Content/Campus/Sports.aspx">Sports</a></li>		
+											 <li><a href="/Content/Campus/Gallery.aspx">Gallery</a></li>	
+											 <li><a href="/Content/Campus/CampusLife.aspx">Campus Life</a></li>
+											 <li><a href="/Content/Campus/Empowerment.aspx">Empowerment</a></li>
+											 <li><a href="/Content/Campus/Downloads.aspx">Downloads</a></li>
+							</ul>  
+									</li>	
+									<li><a href="#">Alumni</a>
+										<ul>
+											 <li><a href="/Content/Alumni/Directory.aspx">Directory</a></li>	
+											 <li><a href="/Content/Alumni/Enrollnow.aspx">Enroll now</a></li>	
+											 <li><a href="/Content/Alumni/Events.aspx">Events & Gallery</a></li>	
+											 <li><a href="/Content/Alumni/Testimonials.aspx">Testimonials</a></li>
+							</ul>  
+									</li>	
+									<li><a href="/ContactUs.aspx">Contact</a></li>
+								</ul>
+							</nav>
+						</div>					
+					</div>	
+					<!-- Main Menu End -->
+					
+				</div>
+			</div>
+		</div>
+		<!-- Main Bar End -->
+			</div>
+	</header>
+	<!-- Header End -->	
+	<div class="clearfix" />
+	  <div class="sticky-container">
+    <ul class="sticky">
+      <li>
+          
+       <a href="https://www.facebook.com/PvkkInstituteOfTechnology" target="_blank"><img width="32" height="32" title="" alt="" src="/img/facebook.png"></a>
+           <div class="fb-like" data-href="https://www.facebook.com/PvkkInstituteOfTechnology" data-width="10" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+      </li>
+    
+      <li>
+        <a href="https://www.youtube.com/channel/UC5DLNu0H9wcF5L0WL8G0zGA" target="_blank"><img width="32" height="32" title="" alt="" src="/img/youtube.png">
+        <p>YouTube</p></a>
+      </li>
+    
+    
+    </ul>
+  </div>
+	<form id="form1" runat="server">
+	<div>
+		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+		
+		</asp:ContentPlaceHolder>
+	</div>
+        	<telerik:RadScriptManager ID="RadScriptManager2" runat="server"><Scripts>
+			<%--Needed for JavaScript IntelliSense in VS2010--%>
+			<%--For VS2008 replace RadScriptManager with ScriptManager--%>
+			<asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+			<asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+			<asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+		</Scripts></telerik:RadScriptManager>
+         <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanelmasterpage" runat="server"> </telerik:RadAjaxLoadingPanel>
+           
+	<telerik:RadAjaxManager ID="RadAjaxManagermasterpage" runat="server">
+    <AjaxSettings>
+                <telerik:AjaxSetting AjaxControlID="Panelnewsletter">
+                    <UpdatedControls>
+                        <telerik:AjaxUpdatedControl ControlID="Panelnewsletter" LoadingPanelID="RadAjaxLoadingPanelmasterpage" />
+                    </UpdatedControls>
+                </telerik:AjaxSetting>
+            </AjaxSettings>
+	</telerik:RadAjaxManager>
+
+				
+	<!-- Footer Section Start -->
+	<footer class="footer">	
+         <asp:Panel ID="Panelnewsletter" runat="server">		
+        <div class="become-instructor-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="instructor-sec-area">
+							<div class="become-instructor-desc">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="single-input-field">
+								   <asp:TextBox ID="tbemail" runat="server" class="form-control placeholder-no-fix"
+														placeholder="E-Mail ID" ValidationGroup="newsletter"></asp:TextBox>
+							   
+							</div>
+							  <span class="help-block danger">
+													<asp:RequiredFieldValidator ID="RequiredFieldValidator7" SetFocusOnError="true"
+														runat="server" ErrorMessage="Enter E-Mail ID"
+														ControlToValidate="tbemail" Display="Dynamic" ForeColor="Red"  ValidationGroup="newsletter"></asp:RequiredFieldValidator>    
+													<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
+													Display="Dynamic" ForeColor="Red" ErrorMessage="Invalid E-Mail ID" SetFocusOnError="true"
+													ControlToValidate="tbemail"
+													ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"  ValidationGroup="newsletter"></asp:RegularExpressionValidator>
+												</span>
+						</div>	
+								
+								<div class="become-instructor-button">
+									     <asp:Button ID="btnnewsletter" runat="server" Text="Subscribe Newsletter" class="mybutton"  ValidationGroup="newsletter"
+													OnClick="btnnewsletter_Click" />	
+								</div>		
+                                <br />
+
+                                       <div class="alert alert-danger hidden" id="divmsg" runat="server">
+			<button class="close" data-close="alert">
+			</button>
+			<asp:Label ID="lblmsg" runat="server" Text=""></asp:Label>
+  <a runat="server" id="msgtag" name="alert"></a>
+		</div>						
+							</div>
+                     
+                         </div>
+
+						</div>
+					</div>
+                  
+				</div>
+                          
+		</div>	
+             </asp:Panel>
+		<!-- Footer Top Start -->
+		<div class="footer-sec">	
+			<div class="container">
+				<div class="row">
+					<!-- Single Footer Widget Start -->
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-wedget-one">
+							<h2>About Us</h2>
+							<p><b>PVKK Institute of Technology</b>, Anantapuramu is one of the leading Engineering Colleges in AP with the approval of AICTE, New Delhi and affiliated to JNTUA, Anantapuramu.</p>	
+								<a href="/Default.aspx"><img src="/img/pvkkit_logo_gif.gif" alt="pvkkit logo"/></a>
+						</div>
+					</div>	
+					<!-- Single Footer Widget End -->
+					<!-- Single Footer Widget Start -->
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-widget-menu">
+							<h2>Useful Links</h2>
+							<ul>
+											<li><a href="http://www.jntua.ac.in/" title="Jawaharlal Nehru Technological University Anantapuramu" target="_blank" rel="nofollow">JNTUA University website</a></li>
+											<li><a href="http://www.aicte-india.org/" title="All India Council for Technical Education" target="_blank" rel="nofollow">AICTE</a></li>
+											<li><a href="http://www.ugc.ac.in/" title="University Grants Commision" target="_blank" rel="nofollow">UGC</a></li>
+											<li><a href="http://www.nptel.ac.in/" title="National Programme on Technology Enhanced Learning" target="_blank" rel="nofollow">NPTEL Videos</a></li>
+											<li><a href="http://www.anantapur.gov.in/" target="_blank" rel="nofollow">About Anantapuramu</a></li>
+
+							</ul>
+						</div>
+					</div>	
+					<!-- Single Footer Widget End -->
+					<!-- Single Footer Widget Start -->
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-widget-menu">
+							<h2>Quick Links</h2>
+							<ul>
+											<li><a href="#">NSS UNIT</a></li>
+											<li><a href="/Gallery.aspx">Gallery</a></li>
+											<li><a href="#">Carees</a></li>
+											<li><a href="#" target="_blank">Alumni Portal</a></li>
+											<li><a href="/downloads/Mandatory_Disclosure_2018-19.pdf" target="_blank">Mandatory Disclosure</a></li>
+											<li><a href="/Contactus.aspx">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>	
+					<!-- Single Footer Widget End -->
+					<!-- Single Footer Widget Start -->
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-wedget-four">
+							<h2>contact us </h2>
+							<div class="inner-box">
+								<div class="media">
+									<div class="inner-item">
+										<div class="media-left">
+											<span class="icon"><i class="fa fa-map-marker"></i></span>
+										</div>				
+										<div class="media-body">
+											<span class="inner-text"><strong>P V K K Institute of Technology </strong><br/>Sanapa Road, Alamuru (P), Rudrampet,<br/> Anantapuramu - 515 001<br/>Andhra Pradesh, India <br/></span>
+										</div>											
+									</div>					
+								</div>								
+								<div class="media">
+									<div class="inner-item">
+										<div class="media-left">
+											<span class="icon"><i class="fa fa-envelope-o"></i></span>
+										</div>				
+										<div class="media-body">
+											<span class="inner-text">principal.3n@jntua.ac.in</span>
+										</div>											
+									</div>					
+								</div>								
+								<div class="media">
+									<div class="inner-item">
+										<div class="media-left">
+											<span class="icon"><i class="fa fa-phone"></i></span>
+										</div>				
+										<div class="media-body">
+											<span class="inner-text">+91 9550616861</span>
+										</div>											
+									</div>					
+								</div>											
+							</div>							
+						</div>
+					</div>
+					<!-- Single Footer Widget End -->
+				</div>
+			</div>
+		</div>
+		<!-- Footer Top End -->
+		<!-- Footer Bottom Start -->
+		<div class="footer-bottom-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="copy-right">
+							<p>Copyright 2019 &copy; <span><a href="#"></a></span> Designed by : <span>Sri Balaji Educational Society</span></p>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<!-- Footer Bottom End -->
+	</footer>
+	<!-- Footer Section End -->
+        </form>
+	<!-- Scripts Js Start -->
+	<script src="/js/jquery-2.2.4.min.js"></script>
+	  
+		
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/isotope.pkgd.min.js"></script>
+	<script src="/js/jquery.magnific-popup.min.js"></script>
+	<script src="/js/owl.carousel.min.js"></script>
+	<script src="/js/owl.animate.js"></script>
+	<script src="/js/jquery.scrollUp.min.js"></script>
+	<script src="/js/jquery.counterup.min.js"></script>
+	<script src="/js/modernizr.min.js"></script>
+	<script src="/js/waypoints.min.js"></script>
+	<script src="/js/jquery.meanmenu.min.js"></script>
+	<script src="/js/imagesloaded.pkgd.min.js"></script>
+	<script src="/js/custom.js"></script>
+	<!-- Scripts Js End -->	
+</body>
+</html>

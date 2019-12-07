@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterPage_Library.master.cs" Inherits="Contents_College_MasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ContentPlaceHolder id="cphkeywords" runat="server">
+
+		</asp:ContentPlaceHolder>
+		<!-- Page Heading Section Start -->	
+	<div class="pagehding-sec">
+			<%--<div class="images-overlay"></div>	--%>	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-heading">
+						<h1>Library</h1>
+					</div>
+					<div class="breadcrumb-list">
+						<ul>
+							<li><a href="/Default.aspx">Home</a></li>
+							<li><a href="#">Library</a></li>
+						</ul>
+					</div>					
+				</div>				
+			</div>
+		</div>
+	</div>
+	<!-- Page Heading Section End -->	
+    
+    <div class="about-us-sec pt-100 pb-70">
+		<div class="container">
+	<div class="row">	
+	<div class="col-md-4">
+					<div class="sidebar">
+						<div class="widget-archive">
+							<h1>Library</h1>
+							<ul>
+											   <li><a href="/Content/Library/Default.aspx">Home</a></li>
+											   <li><a href="/Content/Library/Digitallibrary.aspx">Digital Library</a></li>	
+											<li><a href="/Content/Library/Ejournal.aspx">E-Journal</a></li>	
+                                <li><a href="/Content/Library/ELibrary.aspx">E-Library</a></li>	
+											<li><a href="/Content/Library/Resources.aspx">Resources</a></li>	
+												
+											 
+							        </ul>  
+						</div>						
+					</div>
+				</div>
+		<div class="col-md-8">
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+		</div>
+		</div>
+            <div class="row">	
+
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+		</div>
+			</div>
+		</div>
+</asp:Content>
+

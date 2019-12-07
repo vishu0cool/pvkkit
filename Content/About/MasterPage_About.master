@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterPage_About.master.cs" Inherits="Contents_College_MasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ContentPlaceHolder id="cphkeywords" runat="server">
+
+		</asp:ContentPlaceHolder>
+	<!-- Page Heading Section Start -->	
+	<div class="pagehding-sec">
+			<%--<div class="images-overlay"></div>	--%>	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-heading">
+						<h1>About PVKKIT</h1>
+					</div>
+					<div class="breadcrumb-list">
+						<ul>
+							<li><a href="/Default.aspx">Home</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+					</div>					
+				</div>				
+			</div>
+		</div>
+	</div>
+	<!-- Page Heading Section End -->	
+		
+	
+	<!-- Blog Section Start -->
+	<div class="blog-sec pt-100 pb-70">
+		<div class="container">		
+			<div class="row">	
+				<div class="col-md-4">
+					<div class="sidebar">
+						
+						<div class="widget-archive">
+							<h1>About</h1>
+							<ul>
+								 <li><a href="/Content/About/About_Management.aspx">Management</a></li>	
+											 <li><a href="/Content/About/About_Principal.aspx">Principal</a></li>	
+											 <li><a href="/Content/About/About_Pvkkit.aspx">College</a></li>	
+											 <li><a href="/Content/About/About_Sbes.aspx">Sri Balaji Educational Society</a></li>	
+											 <li><a href="/Content/About/About_BalajiSevasamithi.aspx"> Balaji Sevasamithi</a></li>
+											 <li><a href="/Content/About/About_Insurance.aspx">Balaji Insurance</a></li>
+                                  <li><a href="/gallery.aspx">Gallery</a></li>
+
+
+							</ul>
+						</div>						
+							          																				
+					</div>
+				</div>	
+				<div class="col-md-8">	
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+			</asp:ContentPlaceHolder>			
+					</div>														
+			</div>
+		</div>
+	</div>
+	<!-- Blog Section End -->	
+		
+</asp:Content>
+
